@@ -1,0 +1,6 @@
+//Mi primer prgrama en C
+#include<stdio.h>
+main(){
+	printf("Hola mundo");
+	
+}
