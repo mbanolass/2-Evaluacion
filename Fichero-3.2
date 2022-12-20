@@ -1,0 +1,42 @@
+//Instrucciones basicas
+//Switch , condicional multiple
+
+#include<iostream>//Libreria de cabecera
+using namespace std;
+
+int main(){
+	//definimos 3 variables 
+	int resp;
+	cout<<"**************************************"<<endl;
+	cout<<"                 MENU                  "<<endl;
+	cout<<"**************************************"<<endl;
+	cout<<"1 - Volver a mostrar el menu"<<endl;
+	cout<<"2 - Despedirme"<<endl;
+	cout<<"3 - Salir "<<endl;
+	cout<<"Introduce tres numeros enteros: "<<endl;
+	cout<<"Elige una opcion (1, 2 o 3)";
+	cin>> resp;
+	switch(resp){
+		case 1:
+			cout<<"**************************************"<<endl;
+			cout<<"                 MENU                  "<<endl;
+			cout<<"**************************************"<<endl;
+			cout<<"1 - Volver a mostrar el menu"<<endl;
+			cout<<"2 - Despedirme"<<endl;
+			cout<<"3 - Salir "<<endl;
+			cout<<"Introduce tres numeros enteros: "<<endl;
+			cout<<"Elige una opcion (1, 2 o 3)";
+			break;
+		case 2:
+			cout<<"Estas despedido";
+			break;
+		case 3:
+			break;
+		default:
+			cout<<"Eres tonto o que?";
+			break;
+			
+	}
+	
+	return 0; 
+}
