@@ -1,0 +1,17 @@
+#include<iostream>//Libreria de cabecera
+//Instrucciones basicas
+//Alternas pitagóricas
+int main(){
+	int num1;
+	int num2;
+	int num3;
+	cout<<"Introduce tres numeros: ";
+	cin>>num1;
+	cout<<" , ";
+	cin>>num2;
+	cout<<" , ";
+	cin>>num3;
+	cout<<" , ";
+	
+	return 0;
+}
