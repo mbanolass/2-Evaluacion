@@ -1,0 +1,17 @@
+#include<iostream>//Librería de cabecera
+//Instrucciones básicas
+//ejemplo de for: tabla de multiplicar
+using namespace std;
+
+int main(){
+	int num1;
+	int num2;
+	int num3;
+	cout<<"Dime tres numeros "<<endl;
+	cin>>num1;
+	cin>>num2;
+	cin>>num3;
+	cout<<num1<<" , "<<num2<<" , "<<num3<<endl;
+	return 0;
+	
+}
