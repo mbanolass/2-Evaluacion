@@ -1,0 +1,14 @@
+#include<iostream>
+#include<stdio.h>
+
+using namespace std;
+//Como lo haria una maquina
+int main(){
+	char letra[]="historia";
+	int cont;
+	for(cont=0;cont<=7;cont++){
+		printf("Dame la letra [%d]=%c en la posicion= %x\n",cont,*(letra+cont),&letra[cont]);//*() se usa para indicar que se quiere expresar lo que esta dentro de
+	}
+	printf("letra=%x",letra); //Si cambias x (resultado posicion de la h) por s (resultado historia)
+	return 0;
+}
