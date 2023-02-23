@@ -1,0 +1,41 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+int cuenta_letras(char *p_nombre){
+    int cont=0;
+    while(*(p_nombre+cont)!='\0'){
+        cont++;    
+    }
+    return cont;
+   
+}
+
+int main(){
+    char *palabras[4];
+    char nombre[10];
+    int longitud;
+    int cont,cont1;
+    int num1,num2;
+    num1=0;
+    num2=0;
+    for(cont=0;cont<4;cont++){
+        cout<<"\nDime la palabra "<<cont+1<<": ";
+        cin>>nombre;
+        printf("\nHas introducido %s",nombre);
+        longitud=cuenta_letras(nombre);    
+        palabras[cont]=(char *) malloc((longitud+2)*sizeof(char));
+        cout<<"\nLa longitud de la palabra"<<cont+1<<"es: "<<longitud ;	 
+    }
+    cout<<"\nQue palabra quieres(teniendo en cuenta que la primera palabra es 1): ";
+    cin>>num1;
+    cout<<"\nTu palabra es: "<<palabras+(num1-1);
+    cout<<"\nQue letra quieres sacar(teniendo en cuenta que la primera letra es 0): ";
+    cin>>num2;
+    cout<<"\nLa letra es: "<<(palabras+(num1-1))+num2;
+    cout<<endl;
+    
+
+    return 0;
+}
